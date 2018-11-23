@@ -1,0 +1,46 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+nav {
+	position: absolute;
+}
+
+main {
+	
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+#inicio {
+	background-color: red;
+}
+
+#transicao1 {
+	background-color: green;
+}
+
+#grupo {
+	background-color: red;
+}
+
+#transicao2 {
+	background-color: green;
+}
+
+#contato {
+	background-color: red;
+}
