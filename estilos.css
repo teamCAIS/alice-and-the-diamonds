@@ -15,14 +15,39 @@ nav {
 	position: absolute;
 }
 
-main {
-	
+#wrapper {
+	transition: transform linear 3s;
 }
 
 .container {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
+}
+.container-content {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background: linear-gradient(-180deg, cyan, purple,MediumSpringGreen, DeepPink);
+	background-size: 400% 400%;
+	animation: corFundo 15s ease-in-out infinite alternate;
+}
+@keyframes corFundo{
+	0%{
+		background-position:  50% 0%;
+	}
+	25%{
+		background-position:  50% 100%;
+	}
+	50%{
+		background-position:  50% 0%;
+	} 
+	75%{
+		background-position:  50% 100%;
+	}
+	100%{
+		background-position:  50% 0%;
+	}	
 }
 
 #inicio {
