@@ -16,7 +16,7 @@ nav {
 }
 
 #wrapper {
-	transition: transform linear 3s;
+	transition: transform ease-in 10s;
 }
 
 .container {
@@ -31,6 +31,45 @@ nav {
 	background: linear-gradient(-180deg, cyan, purple,MediumSpringGreen, DeepPink);
 	background-size: 400% 400%;
 	animation: corFundo 15s ease-in-out infinite alternate;
+}
+.objeto{
+	position:absolute;
+}
+#coluna1{
+	width:30%;
+	height:100%;
+	background-color: black;
+}
+#coluna2{
+	margin-left:70%;
+	width:30%;
+	height:100%;
+	background-color: black;
+}
+#alice{
+	margin-left:40%;
+	width:300px;
+	height:300px; 
+	transform: translateY(-15%) scale(0.5);
+	transition: transform ease-in 10s;
+	background-image: url('images/alice.jpg');
+	filter: grayscale(100%);
+}
+#clock{
+	margin-left:50%;
+	width:300px;
+	height:300px; 
+	transform: translateY(20%) scale(0.5) rotate(15deg);
+	transition: transform ease-in 7s;
+	background-image: url('images/clock.png');
+}
+#chair{
+	margin-left:27%;
+	width:300px;
+	height:300px; 
+	transform: translateY(40%) scale(0.5) rotate(-15deg);
+	transition: transform ease-in 10s;
+	background-image: url('images/chair.png');
 }
 @keyframes corFundo{
 	0%{
@@ -51,21 +90,21 @@ nav {
 }
 
 #inicio {
-	background-color: red;
+	background-color: black;
 }
 
 #transicao1 {
-	background-color: green;
+	background-color: white;
 }
 
 #grupo {
-	background-color: red;
+	background-color: black;
 }
 
 #transicao2 {
-	background-color: green;
+	background-color: white;
 }
 
 #contato {
-	background-color: red;
+	background-color: black;
 }
