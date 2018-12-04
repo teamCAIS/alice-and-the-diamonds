@@ -30,8 +30,9 @@ wrapper.addEventListener('click', (event) => {
 
 	if(event.target.classList.contains('ancora-contato')) {
 		wrapper.style = 'transform: translateY(-80%)';
-		clock.style = 'transform: translateY(-30%) scale(0.5) rotate(15deg)';
+		clock.style = 'transform: translateY(-30%) scale(0.5) rotate(30deg)';
 		chair.style = 'transform: translateY(-30%) scale(0.5) rotate(-45deg)';
+		chair2.style = 'transform: translateY(-30%) scale(0.5) rotate(-45deg)';
 		book.style = 'transform: translateY(-30%) scale(0.5) rotate(30deg)';
 		table.style = 'transform: translateY(-30%) scale(0.5) rotate(-30deg)';
 		alice.style = 'transform: translateY(40%) scale(0.4)';
