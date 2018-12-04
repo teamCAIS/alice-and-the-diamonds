@@ -6,10 +6,13 @@ body {
 	margin: 0;
 	overflow: hidden;
 }
-
+@font-face { 
+	font-family: "Neigfriste"; 
+	src: url('neigfriste.otf'); 
+}
 body * {
 	box-sizing: border-box;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Neigfriste';
 }
 
 nav {
@@ -47,7 +50,7 @@ li:hover{
 	width: 100vw;
 	height: 100vh;
 	position: relative;
-	background: linear-gradient(-45deg, cyan, purple,MediumSpringGreen, DeepPink);
+	background: linear-gradient(180deg, #18fe01, purple,#151498, DeepPink);
 	background-size: 400% 400%;
 	animation: corFundo 15s ease-in-out infinite alternate;
 }
@@ -180,11 +183,22 @@ li:hover{
 }
 #secao3 form{
 	margin-left:40%;
-	margin-top:15%;
+	margin-top:-1%;
 	display:flex;
 	flex-direction: column;
 	justify-content:center;
 	width:300px;
+}
+#secao3 form button{
+	width:100px;
+	margin-top:3%;
+	margin-left:30%;
+}
+#secao3 h1{
+	font-size: 32px;
+	margin-left:38%;
+	margin-top:10%;
+	color:white;
 }
 Label{
 	color:white;
