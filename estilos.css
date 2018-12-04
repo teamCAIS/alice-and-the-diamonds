@@ -14,20 +14,31 @@ body * {
 nav {
 	position: absolute;
 	height:100vh;
-	width:10%;
+	width:5%;
 	background-color: rgba(0,0,0,0.3);
 	z-index:2;
 }
-
+ul{
+	list-style:none;
+	margin-left:-50%;
+	margin-top:200px;
+}
+li{
+	width:50px;
+	height:50px;
+	background:url('images/rosa2.png') no-repeat;
+	background-size: 50px 50px;
+	margin-bottom:20px;
+	transition: 1s;
+}
+li:hover{
+	background:url('images/rosa2_pintada.png') no-repeat;
+	background-size: 50px 50px;
+}
 #wrapper {
 	transition: transform ease-in 10s;
 }
-a img{
-	max-width:8%;
-	max-height:8%;
-	background: url('images/rosa2.png') no-repeat;
-	transition: 1s;
-}
+
 .container {
 	width: 100vw;
 	height: 100vh;

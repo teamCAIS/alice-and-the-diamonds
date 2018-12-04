@@ -12,6 +12,9 @@ wrapper.addEventListener('click', (event) => {
 		wrapper.style = 'transform: translateY(0%)';
 		clock.style = 'transform: translateY(25%) scale(0.5) rotate(15deg)';
 		chair.style = 'transform: translateY(5%) scale(0.5) rotate(-15deg)';
+		chair2.style = 'transform: translateY(155%) scale(0.5) rotate(-15deg)';
+		book.style = 'transform:  translateY(95%) scale(0.5) rotate(-15deg)';
+		table.style = 'transform: translateY(125%) scale(0.5) rotate(-15deg)';
 		alice.style = 'transform: translateY(-30%) scale(0.4)';
 	}
 
