@@ -13,64 +13,30 @@ body * {
 
 nav {
 	position: absolute;
+	height:100vh;
+	width:10%;
+	background-color: rgba(0,0,0,0.3);
+	z-index:2;
 }
 
 #wrapper {
 	transition: transform ease-in 10s;
 }
-
+a img{
+	max-width:8%;
+	max-height:8%;
+	background: url('images/rosa2.png') no-repeat;
+	transition: 1s;
+}
 .container {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
-}
-.container-content {
-	width: 100vw;
-	height: 100vh;
-	position: relative;
-	background: linear-gradient(-180deg, cyan, purple,MediumSpringGreen, DeepPink);
+	background: linear-gradient(-45deg, cyan, purple,MediumSpringGreen, DeepPink);
 	background-size: 400% 400%;
 	animation: corFundo 15s ease-in-out infinite alternate;
 }
-.objeto{
-	position:absolute;
-}
-#coluna1{
-	width:30%;
-	height:100%;
-	background-color: black;
-}
-#coluna2{
-	margin-left:70%;
-	width:30%;
-	height:100%;
-	background-color: black;
-}
-#alice{
-	margin-left:40%;
-	width:300px;
-	height:300px; 
-	transform: translateY(-15%) scale(0.5);
-	transition: transform ease-in 10s;
-	background-image: url('images/alice.jpg');
-	filter: grayscale(100%);
-}
-#clock{
-	margin-left:50%;
-	width:300px;
-	height:300px; 
-	transform: translateY(20%) scale(0.5) rotate(15deg);
-	transition: transform ease-in 7s;
-	background-image: url('images/clock.png');
-}
-#chair{
-	margin-left:27%;
-	width:300px;
-	height:300px; 
-	transform: translateY(40%) scale(0.5) rotate(-15deg);
-	transition: transform ease-in 10s;
-	background-image: url('images/chair.png');
-}
+
 @keyframes corFundo{
 	0%{
 		background-position:  50% 0%;
@@ -88,23 +54,84 @@ nav {
 		background-position:  50% 0%;
 	}	
 }
-
+.background{
+	position:absolute;
+	width:100vw;
+	height:100vh;
+}
 #inicio {
 	background-color: black;
 }
-
-#transicao1 {
-	background-color: white;
+#secao1{
+	background: url('images/Alicefundo.png') no-repeat;
+	background-size: 100vw 100vh;
 }
-
+#transicao1 {
+}
+.objeto{
+	position:absolute;
+	width:300px;
+	height:300px; 
+	z-index:2;
+}
+#alice{
+	margin-left:34%;
+	width:423px;
+	height:565px; 
+	transform: translateY(-30%) scale(0.4);
+	transition: transform ease-in 10s;
+	background-image: url('images/alice.png');
+}
+#clock{
+	margin-left:50%;
+	transform: translateY(5%) scale(0.5) rotate(15deg);
+	transition: transform ease-in 7s;
+	background-image: url('images/clock.png');
+}
+#chair{
+	margin-left:27%;
+	transform: translateY(55%) scale(0.5) rotate(-15deg);
+	transition: transform ease-in 10s;
+	background-image: url('images/frontchair.png');
+}
+#chair2{
+	margin-left:53%;
+	transform: translateY(155%) scale(0.5) rotate(-15deg);
+	transition: transform ease-in 17s;
+	background-image: url('images/chair.png');
+}
+#book{
+	margin-left:52%;
+	transform: translateY(95%) scale(0.5) rotate(-15deg);
+	transition: transform ease-in 13s;
+	background-image: url('images/book1.png');
+}
+#table{
+	margin-left:25%;
+	transform: translateY(125%) scale(0.5) rotate(-15deg);
+	transition: transform ease-in 15s;
+	background-image: url('images/table.png');
+}
+#fundo img{
+	position:absolute;
+	width:100vw;
+	height:100vh;
+	z-index:0;
+}
 #grupo {
 	background-color: black;
 }
-
+#secao2{
+	background: url('images/red_queen.png') no-repeat;
+	background-size: 100vw 100vh;
+}
 #transicao2 {
 	background-color: white;
 }
-
 #contato {
 	background-color: black;
+}
+#secao3{
+	background: url('images/coelho.png') no-repeat;
+	background-size: 100vw 100vh;
 }
