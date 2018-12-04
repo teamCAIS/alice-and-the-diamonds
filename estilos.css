@@ -17,11 +17,14 @@ nav {
 	width:5%;
 	background-color: rgba(0,0,0,0.3);
 	z-index:2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 ul{
 	list-style:none;
-	margin-left:-50%;
-	margin-top:200px;
+	padding: 0;
 }
 li{
 	width:50px;
@@ -36,7 +39,7 @@ li:hover{
 	background-size: 50px 50px;
 }
 #wrapper {
-	transition: transform ease-in 10s;
+	transition: transform ease-in 5s;
 }
 
 .container {
@@ -132,13 +135,39 @@ li:hover{
 #grupo {
 	background-color: black;
 }
+
 #secao2{
 	background: url('images/red_queen.png') no-repeat;
 	background-size: 100vw 100vh;
 }
-#transicao2 {
-	background-color: white;
+
+#alice-bebendo {
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
+
+#alice-bebendo.bebendo {
+	animation-name: bebendo;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+}
+
+@keyframes bebendo {
+	0% {
+		background-image: url('images/1.png');
+	}
+	50% {
+		background-image: url('images/2.png');
+	}
+	75% {
+		background-image: url('images/3.png');
+	}
+}
+
 #contato {
 	background-color: black;
 }
