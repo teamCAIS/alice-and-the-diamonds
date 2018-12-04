@@ -10,6 +10,7 @@ body {
 	font-family: "Neigfriste"; 
 	src: url('neigfriste.otf'); 
 }
+
 body * {
 	box-sizing: border-box;
     font-family: 'Neigfriste';
@@ -17,13 +18,37 @@ body * {
 
 p {
 	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-top:2%;
 }
-
+.info{
+	margin-top:-10%;
+	font-size:38px;
+}
+#infos{
+	width:550px;
+	margin-top:15%;
+	text-align:center;
+}
+#conteudo{
+	color:white;
+	width:500px;
+	margin-left:34%;
+	margin-top:10%;
+}
+#conteudo .titulo{
+	font-size:48px;
+	margin-top:0%;
+}
+#conteudo p{
+	margin-top:-7%;
+	font-style:italic;
+}
 nav {
 	position: absolute;
 	height:100vh;
 	width:5%;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.9);
 	z-index:2;
 	display: flex;
 	flex-direction: column;
@@ -62,7 +87,7 @@ li.active {
 	position: relative;
 	background: url('images/fundo.png');/*linear-gradient(180deg, #18fe01, purple,#151498, DeepPink);*/
 	background-size: 150% 400%;
-	animation: corFundo 60s ease-in-out infinite alternate;
+	animation: corFundo 90s ease-in-out infinite alternate;
 }
 
 @keyframes corFundo{
@@ -155,7 +180,13 @@ li.active {
 	background: url('images/Coelho.png') no-repeat;
 	background-size: 90vw 100vh;
 }
-
+#nome-grupo{
+	color:white;
+	font-size:64px;
+	transform: rotate(-30deg);
+	margin-top:9%;
+	margin-left:-1%;
+}
 .grupo-texto {
 	width: 320px;
 	color: #ddd;
@@ -207,21 +238,37 @@ li.active {
 }
 #secao3 form{
 	margin-left:40%;
-	margin-top:-1%;
 	display:flex;
+	margin-top:-2%;
 	flex-direction: column;
 	justify-content:center;
 	width:300px;
 }
+#secao3 form input{
+	margin-bottom:2%;
+}
+#secao3 form label{
+	margin-bottom:2%;
+}
 #secao3 form button{
 	width:100px;
+	height:40px;
+	background-color:white;
+	font-size:18px;
 	margin-top:3%;
 	margin-left:30%;
+	border-radius:2px;
 }
 #secao3 h1{
 	font-size: 32px;
-	margin-left:38%;
-	margin-top:10%;
+	margin-left:39%;
+	margin-top:9%;
+	color:white;
+}
+#secao3 h2{
+	margin-top:-2%;
+	margin-left:42%;
+	margin-bottom:2%;
 	color:white;
 }
 Label{
