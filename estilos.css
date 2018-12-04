@@ -32,7 +32,7 @@ li{
 	background:url('images/rosa2.png') no-repeat;
 	background-size: 50px 50px;
 	margin-bottom:20px;
-	transition: 1s;
+	transition: 0.5s;
 }
 li:hover{
 	background:url('images/rosa2_pintada.png') no-repeat;
@@ -137,8 +137,9 @@ li:hover{
 }
 
 #secao2{
-	background: url('images/red_queen.png') no-repeat;
-	background-size: 100vw 100vh;
+	margin-left:5%;
+	background: url('images/coelho.png') no-repeat;
+	background-size: 90vw 100vh;
 }
 
 #alice-bebendo {
@@ -172,6 +173,17 @@ li:hover{
 	background-color: black;
 }
 #secao3{
-	background: url('images/coelho.png') no-repeat;
+	background: url('images/red_queen.png') no-repeat;
 	background-size: 100vw 100vh;
+}
+#secao3 form{
+	margin-left:40%;
+	margin-top:15%;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	width:300px;
+}
+Label{
+	color:white;
 }
