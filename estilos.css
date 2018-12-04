@@ -49,7 +49,7 @@ li:hover{
 
 li.active {
 	background:url('images/rosa2_pintada.png') no-repeat;
-	background-size: 50px 50px;
+	background-size: 70px 70px;
 }
 
 #wrapper {
@@ -160,8 +160,14 @@ li.active {
 	width: 320px;
 	color: #ddd;
 	position: absolute;
-	bottom: 25%;
+	bottom: 19%;
 	right: 25%;
+	line-height: 1.5;
+}
+
+.destaque {
+	color: #9900ff;
+	font-size: 1.2rem;
 }
 
 #alice-bebendo {
