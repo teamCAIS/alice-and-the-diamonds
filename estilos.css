@@ -27,7 +27,8 @@ p {
 }
 #infos{
 	width:550px;
-	margin-top:15%;
+	margin-top:-17%;
+	margin-left:-3%;
 	text-align:center;
 }
 #conteudo{
@@ -39,9 +40,10 @@ p {
 #conteudo .titulo{
 	font-size:48px;
 	margin-top:0%;
+	color: white;
 }
 #conteudo p{
-	margin-top:-7%;
+	margin-top:-8%;
 	font-style:italic;
 }
 nav {
