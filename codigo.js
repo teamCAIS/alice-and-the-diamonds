@@ -17,6 +17,7 @@ wrapper.addEventListener('click', (event) => {
 		book.style = 'transform:  translateY(95%) scale(0.5) rotate(-15deg)';
 		table.style = 'transform: translateY(125%) scale(0.5) rotate(-15deg)';
 		alice.style = 'transform: translateY(-30%) scale(0.4)';
+		bebe();
 	}
 
 	if(event.target.classList.contains('ancora-grupo')) {
@@ -27,7 +28,7 @@ wrapper.addEventListener('click', (event) => {
 		book.style = 'transform: translateY(-30%) scale(0.5) rotate(30deg)';
 		table.style = 'transform: translateY(-30%) scale(0.5) rotate(-30deg)';
 		alice.style = 'transform: translateY(40%) scale(0.4)';
-		transicao2.classList.remove('bebendo');
+		bebe();
 	}
 
 	if(event.target.classList.contains('ancora-contato')) {
@@ -38,7 +39,20 @@ wrapper.addEventListener('click', (event) => {
 		book.style = 'transform: translateY(-30%) scale(0.5) rotate(30deg)';
 		table.style = 'transform: translateY(-30%) scale(0.5) rotate(-30deg)';
 		alice.style = 'transform: translateY(40%) scale(0.4)';
-		transicao2.classList.add('bebendo');
+		bebe();
 	}
 
 });
+
+var isBebendo = false;
+
+function bebe() {
+	if(!isBebendo) {
+		transicao2.classList.add('bebendo');
+		isBebendo = true;
+		setTimeout(()=> {
+			transicao2.classList.remove('bebendo');
+			isBebendo = false;
+		}, 10000);
+	}
+}

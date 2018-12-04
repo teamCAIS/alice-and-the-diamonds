@@ -39,7 +39,7 @@ li:hover{
 	background-size: 50px 50px;
 }
 #wrapper {
-	transition: transform ease-in 5s;
+	transition: transform ease-in 10s;
 }
 
 .container {
@@ -148,13 +148,14 @@ li:hover{
 	z-index: 99;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+	background-image: url('images/3.png');
 }
 
 #alice-bebendo.bebendo {
 	animation-name: bebendo;
-	animation-duration: 4s;
-	animation-delay: 2s;
-	animation-fill-mode: both;
+	animation-duration: 6s;
+	animation-delay: 4s;
+	animation-iteration-count: 2;
 }
 
 @keyframes bebendo {
