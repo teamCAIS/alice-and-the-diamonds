@@ -15,6 +15,10 @@ body * {
     font-family: 'Neigfriste';
 }
 
+p {
+	font-family: 'Raleway', sans-serif;
+}
+
 nav {
 	position: absolute;
 	height:100vh;
@@ -42,6 +46,12 @@ li:hover{
 	background:url('images/rosa2_pintada.png') no-repeat;
 	background-size: 50px 50px;
 }
+
+li.active {
+	background:url('images/rosa2_pintada.png') no-repeat;
+	background-size: 50px 50px;
+}
+
 #wrapper {
 	transition: transform ease-in 10s;
 }
@@ -144,6 +154,14 @@ li:hover{
 	margin-left:5%;
 	background: url('images/Coelho.png') no-repeat;
 	background-size: 90vw 100vh;
+}
+
+.grupo-texto {
+	width: 320px;
+	color: #ddd;
+	position: absolute;
+	bottom: 25%;
+	right: 25%;
 }
 
 #alice-bebendo {
